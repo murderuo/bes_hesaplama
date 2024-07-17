@@ -14,11 +14,11 @@ for ay in range(1,degerlendirilecek_sure):
     birikim_getirisi=birikim*aylik_getiri/100
     toplam_birikim+=birikim_getirisi
     if ay%12==0:
-        aylik_getiri+=aylik_getiri*yillik_artis_miktari/100
+        #aylik_getiri+=aylik_getiri*yillik_artis_miktari/100 aylık getiri oranı süre boyunca sabit tutuldu
         baslangic_tutari+=baslangic_tutari*yillik_artis_miktari/100
     print(f'ödenen toplam pirim:{birikim:.2f}\t\t\t\t\t\t prim getirisi:{birikim_getirisi:.2f}\t\t\t\t\t\tprim miktarı:{baslangic_tutari:.2f} \t aylık getiri oranı:{aylik_getiri}')
     
-print(f'{toplam_birikim:.2f}')
+print(f'Toplam ödenen prim + prim getirisi: {toplam_birikim:.2f}')
 
 
 
